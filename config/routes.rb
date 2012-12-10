@@ -1,17 +1,46 @@
 SZWebsite::Application.routes.draw do
-  root :to => 'SZ_core#index'
 
-  match '/events', :to => 'sz_core#events'
-  match '/shop', :to => 'sz_core#shop'
-  match '/discussion', :to => 'sz_core#discussion'
+  resources :organisations
+
+  resources :comments
+
+  devise_for :users
+
+  resources :events
+
+  root :to => 'SZ_core#home'
+
+  match '/contact', :to => 'sz_core#contact'
+  
+  match '/resources', :to => 'sz_core#resources'
+  match '/about', :to => 'sz_core#about'
+  match '/birds', :to => 'sz_core#birds'
+  match '/butterflies', :to => 'sz_core#butterflies'
+  match '/fungi', :to => 'sz_core#fungi'
+  match '/plants', :to => 'sz_core#plants'
+  match '/tabtest', :to => 'sz_core#tabs'
  
-  get "sz_core/index"
+ 
 
   get "sz_core/events"
 
-  get "sz_core/shop"
+  get "sz_core/contact"
 
-  get "sz_core/discussion"
+  get "sz_core/organisations"
+
+  get "sz_core/resources"
+
+  get "sz_core/about"
+
+  get "sz_core/birds"
+
+  get "sz_core/butterflies"
+
+  get "sz_core/fungi"
+
+  get "sz_core/plants"
+
+  get "sz_core/tabtest"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

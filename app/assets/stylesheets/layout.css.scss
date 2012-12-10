@@ -1,0 +1,96 @@
+/* layout.css.scss
+*
+* Basic styling for static pages 
+*
+*/
+
+@import "site-branding";
+@import "normalize";
+
+body {
+	font-family: $body-font;
+}
+
+h1, h2 {
+	color: $near-black;
+	font-family: $heading-font;
+}
+
+h3 {
+	color: $dark-green;
+	font: italic bold 20px $accent-font;
+}
+
+
+header {
+	display: block;
+
+	
+	min-height: 8px;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #3bec3b;
+}
+
+
+div#container {
+	display: block;
+
+	position: relative;
+	min-height: 1000px;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: $khaki;
+}
+
+div#columns {
+	
+}
+
+div#columns2 {
+	height: 10px;
+	width: 10px;
+}
+
+
+div#side {
+	float: left;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding: 5px;
+
+}
+
+nav#main_nav{
+	background-color: $mid-green;
+}
+
+nav#utility {
+	float: right;
+	font-size: 1em;
+
+}
+
+section#main {
+	float: left;
+	width: 10px;
+	padding: 0 15px;
+}
+
+section#sidebar {
+	margin-left: 300px;
+	margin-right: 25px;
+	padding: 5px;
+}
+
+section#maintext {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+footer {
+	clear: left;
+	margin-left: 25px;
+}

@@ -1,0 +1,26 @@
+// Place all the styles related to the Organisations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "site-branding";
+@import "popout";
+
+
+article#organisations {
+	padding-left: 20px;
+	section {
+		@include popout;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 20px;
+		background-color: #2EB82E;
+		h1, h2 {
+			color: $white;
+			font-size: 20px;
+		}
+	}
+}
+
+article#organisations section:nth-child(even) {
+	background-color: #398F39;
+}

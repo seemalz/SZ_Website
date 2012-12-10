@@ -4,15 +4,8 @@ class SzCoreController < ApplicationController
   	@title = "Home"
   end
 
-  def events
-  	@title = "Events"
-  end
+  #def events
+  #	@title = "Events"
+  #end
 
-  def shop
-  	@title = "Shop"
-  end
-
-  def discussion
-  	@title = "Discussion Forum"
-  end
 end

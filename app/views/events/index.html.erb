@@ -1,0 +1,29 @@
+<article id="events">
+
+<% @events.each do |event| %>
+  <section>
+    <h2><%= event.title %></h2>
+    <h1> Date of event: <%= event.date %></h1>
+    <p>
+
+    <%= event.description %>
+
+</p>
+      <% if user_signed_in? %>
+      <p>
+    <%= link_to 'Show', event %> |
+    <%= link_to 'Edit', edit_event_path(event) %>
+    <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+<% end %>
+  </section>
+<% end %>
+
+<% if user_signed_in? %>
+<section>
+
+<%= link_to 'New Event', new_event_path %>
+</section>
+<% end %>
+
+</article>

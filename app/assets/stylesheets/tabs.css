@@ -1,0 +1,52 @@
+ul.tabs a:link, ul.tabs a:visited, ul.tabs a:active {
+  text-decoration: none;
+  color: #B20000;
+}
+
+ul.tabs a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+ul.tabs a {
+  display: block;
+}
+
+ul.tabs {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #FFFF66;
+  margin-bottom: 10px;
+}
+
+ul.tabs li {
+  float: left;
+  width: 25%;
+}
+
+ul.tabs .tab-label {
+  border: 1px solid #FFFF66;
+  margin: 0;
+  padding-bottom: 2px;
+  text-align: center;
+  font-weight: normal;
+  background-color: #EEE;
+}
+
+ul.tabs li.selected .tab-label {
+  position: relative;
+  border-bottom: none;
+  top: 1px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  border-top: 2px solid #FFFF66;
+  margin-top: -5px;
+  background-color: #AAA;
+  font-weight: bold;
+}
+
+body {
+  padding: 10px;
+}

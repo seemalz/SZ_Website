@@ -1,3 +1,57 @@
+<article>
+  <div id = "side">
+  <p>
+    <%= image_tag "butterflies/Adonis-Blue-face.jpg", :class => 'butterfliesLeft',
+                    :title => 'Adonis Blue face on. Copyright: Jeremy Early', :alt => "Adonis Blue butterfly face on" %>
+  </p>
+
+</div>
+
+<section id = "sidebar">
+</br>
+  <h1>Natural History Related Events in Mole Valley</h1>
+  <p>
+    Mole Valley has a lively and active community of natural history enthusiasts. There are events
+    that suite all levels of experience. We provide here some links that will keep you up to date
+    with natural history related activities in Mole Valley.
+  </p>
+  <p>
+    The RSPB Dorking and District Local Group organise regular events throughout the year that are
+    open to all. You do not need to be an expert birdwatcher. Indeed you will find many are ideal
+    for those that are wanting to get started. An up to date programme of events can be found
+    <%= link_to("here", "http://www.rspb.org.uk/groups/dorkinganddistrict/events/", {:target => "_blank"}) %>.
+  </section>
+
+</br>
+
+  </p>
+  <div id = "side">
+  <%= image_tag "Adders-dancing.jpg", :class => 'butterfliesRight',
+                    :title => 'Male Adders dancing. Copyright: Jeremy Early', :alt => "Male Adders dancing" %>
+                  </div>
+
+                    <section id = "sidebar">
+  
+    Amphibians and Reptiles are important indicators of habitat quality. The Surrey Amphibian and Reptile
+    Group is an extremely active and enthusiastic group that provides important support for some of our
+    most threatened habitats. An up to date list of their events can be found
+    <%= link_to("here", "http://surrey-arg.org.uk/SARG/30000-CommitteeTools/calendar/SARGcalendar.asp", {:target => "_blank"}) %> and also below.
+  
+  </section>
+</article>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 <article id="events">
 
 <% @events.each do |event| %>
